@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Template Copy</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
         <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -22,28 +23,68 @@
                         </a>
                         <ul class="nav__link--group">
                             <li>
-                                <a href="#" class="nav__link">About</a>
+                                <a href="#about" class="nav__link">About</a>
                             </li>
                             <li>
-                                <a href="#" class="nav__link">Features</a>
+                                <a href="#features" class="nav__link">Features</a>
                             </li>
                             <li>
-                                <a href="#" class="nav__link">Pricing</a>
+                                <a href="#pricing" class="nav__link">Pricing</a>
                             </li>
                             <li>
-                                <a href="#" class="nav__link">Contact Us</a>
+                                <a href="javascript:void(0)" class="nav__link">Contact Us</a>
                             </li>
                             <li>
-                                <a href="#" class="nav__link nav__link--login">Login</a>
+                                <a href="javascript:void(0)" class="nav__link nav__link--login">Login</a>
                             </li>
                             <li>
-                                <a href="#" class="nav__link--signup">Sign Up</a>
+                                <a href="javascript:void(0)" class="nav__link--signup">Sign Up</a>
+                            </li>
+                        </ul>
+                        <button class="btn__menu" onclick="openMenu()">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="menu__section">
+                        <button class="btn--close__menu" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__section--content">
+                            <li>
+                                <div class="menu__item">
+                                    <a href="#about" class="nav__link menu__link" onclick="closeMenu()">About</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu__item">
+                                    <a href="#features" class="nav__link menu__link" onclick="closeMenu()">Features</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu__item">
+                                    <a href="#pricing" class="nav__link menu__link" onclick="closeMenu()">Pricing</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu__item">
+                                    <a href="javascript:void(0)" class="nav__link menu__link">Contact Us</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu__item">
+                                    <a href="javascript:void(0)" class="nav__link nav__link--login menu__link">Login</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu__item menu__item--signup">
+                                    <a href="javascript:void(0)" class="nav__link--signup menu__link">Sign Up</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <header>
+            <header id="about">
                 <div class="container">
                     <div class="row">
                         <div class="header__wrapper">
@@ -359,7 +400,66 @@
         </main>
 
         <footer>
-            <div></div>
+            <div class="footer__section--wrapper">
+                <div class="footer__section">
+                    <h4 class="footer__section--title">MAIN</h4>
+                    <a class="footer__section--link" href="javascript:void(0)">Blog</a>
+                    <a class="footer__section--link" href="javascript:void(0)">FAQs</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Support</a>
+                    <a class="footer__section--link" href="javascript:void(0)">About Us</a>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__section--title">PRODUCT</h4>
+                    <a class="footer__section--link" href="javascript:void(0)">Log In</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Personal</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Business</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Team</a>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__section--title">PRESS</h4>
+                    <a class="footer__section--link" href="javascript:void(0)">Logos</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Events</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Stories</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Office</a>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__section--title">TEAM</h4>
+                    <a class="footer__section--link" href="javascript:void(0)">Career</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Founders</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Culture</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Onboarding</a>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__section--title">LEGAL</h4>
+                    <a class="footer__section--link" href="javascript:void(0)">GDPR</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Privacy Policy</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Terms of Service</a>
+                    <a class="footer__section--link" href="javascript:void(0)">Disclaimer</a>
+                </div>
+            </div>
+            <hr class="footer__line"/>
+            <div class="footer__bottom">
+                <div class="footer__logo--content">
+                    <figure class="footer__logo--img__wrapper">
+                        <img class="footer__logo--img" src="assets/footer logo image.svg" alt="Footer Logo">
+                    </figure>
+                    <h3 class="footer__logo--name">Treact Inc.</h3>
+                </div>
+                <div>
+                    <p class="footer__text">Copyright&copy; Treact Inc. All Rights Reserved.</p>
+                </div>
+                <div class="footer__socials">
+                    <a class="footer--social__link" href="https://www.facebook.com/" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"></path></svg>
+                    </a>
+                    <a class="footer--social__link" href="https://x.com/" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M22.162 5.656a8.384 8.384 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.21 4.21 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.394 8.394 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 002.087-2.165z"></path></svg>
+                    </a>
+                    <a class="footer--social__link" href="https://www.youtube.com/" target="_blank">
+                        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"></path></svg>
+                    </a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
